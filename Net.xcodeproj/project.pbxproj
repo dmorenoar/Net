@@ -14,6 +14,11 @@
 		3305FABD22154C6900086920 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3305FABB22154C6900086920 /* LaunchScreen.storyboard */; };
 		3305FAC822154C6900086920 /* NetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3305FAC722154C6900086920 /* NetTests.swift */; };
 		3305FAD322154C6900086920 /* NetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3305FAD222154C6900086920 /* NetUITests.swift */; };
+		3305FAE122154CFF00086920 /* TableViewCellCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3305FAE022154CFF00086920 /* TableViewCellCustom.swift */; };
+		3305FAE422154DF900086920 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3305FAE322154DF900086920 /* Tools.swift */; };
+		3305FAE822154E7500086920 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3305FAE722154E7500086920 /* Movie.swift */; };
+		3305FAEB22154F0100086920 /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3305FAEA22154F0100086920 /* csv.swift */; };
+		3305FAEF2215532100086920 /* moviesCSV.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3305FAEE2215532100086920 /* moviesCSV.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		3305FACE22154C6900086920 /* NetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3305FAD222154C6900086920 /* NetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetUITests.swift; sourceTree = "<group>"; };
 		3305FAD422154C6900086920 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3305FAE022154CFF00086920 /* TableViewCellCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellCustom.swift; sourceTree = "<group>"; };
+		3305FAE322154DF900086920 /* Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
+		3305FAE722154E7500086920 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		3305FAEA22154F0100086920 /* csv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
+		3305FAEE2215532100086920 /* moviesCSV.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = moviesCSV.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +107,12 @@
 		3305FAB122154C6400086920 /* Net */ = {
 			isa = PBXGroup;
 			children = (
+				3305FAE922154EEE00086920 /* Libraries */,
+				3305FAE622154E6D00086920 /* Models */,
+				3305FAE222154DED00086920 /* Tools */,
 				3305FAB222154C6400086920 /* AppDelegate.swift */,
 				3305FAB422154C6400086920 /* ViewController.swift */,
+				3305FAE022154CFF00086920 /* TableViewCellCustom.swift */,
 				3305FAB622154C6500086920 /* Main.storyboard */,
 				3305FAB922154C6900086920 /* Assets.xcassets */,
 				3305FABB22154C6900086920 /* LaunchScreen.storyboard */,
@@ -123,6 +137,31 @@
 				3305FAD422154C6900086920 /* Info.plist */,
 			);
 			path = NetUITests;
+			sourceTree = "<group>";
+		};
+		3305FAE222154DED00086920 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				3305FAE322154DF900086920 /* Tools.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		3305FAE622154E6D00086920 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3305FAE722154E7500086920 /* Movie.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3305FAE922154EEE00086920 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				3305FAEE2215532100086920 /* moviesCSV.csv */,
+				3305FAEA22154F0100086920 /* csv.swift */,
+			);
+			path = Libraries;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +270,7 @@
 			files = (
 				3305FABD22154C6900086920 /* LaunchScreen.storyboard in Resources */,
 				3305FABA22154C6900086920 /* Assets.xcassets in Resources */,
+				3305FAEF2215532100086920 /* moviesCSV.csv in Resources */,
 				3305FAB822154C6500086920 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,8 +296,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3305FAEB22154F0100086920 /* csv.swift in Sources */,
 				3305FAB522154C6400086920 /* ViewController.swift in Sources */,
 				3305FAB322154C6400086920 /* AppDelegate.swift in Sources */,
+				3305FAE122154CFF00086920 /* TableViewCellCustom.swift in Sources */,
+				3305FAE422154DF900086920 /* Tools.swift in Sources */,
+				3305FAE822154E7500086920 /* Movie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
